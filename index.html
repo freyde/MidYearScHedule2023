@@ -32,19 +32,19 @@ xmlns="http://www.w3.org/TR/REC-html40">
  var c_lTabs=13;
 
  var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "BSITÂ 2-1";
- c_rgszSh[1] = "BSITÂ 2-2";
- c_rgszSh[2] = "BSITÂ 2-3";
- c_rgszSh[3] = "BSITÂ 2-4";
- c_rgszSh[4] = "BSITÂ 2-5";
- c_rgszSh[5] = "BSEEÂ 1-1";
- c_rgszSh[6] = "BSEEÂ 1-2";
- c_rgszSh[7] = "BSEMÂ 1-1";
- c_rgszSh[8] = "BEEÂ 2-1";
- c_rgszSh[9] = "BEEÂ 2-2";
- c_rgszSh[10] = "BEEÂ 2-3";
- c_rgszSh[11] = "BSEEÂ 2-1";
- c_rgszSh[12] = "BSEEÂ 2-2";
+ c_rgszSh[0] = "BSIT 2-1";
+ c_rgszSh[1] = "BSIT 2-2";
+ c_rgszSh[2] = "BSIT 2-3";
+ c_rgszSh[3] = "BSIT 2-4";
+ c_rgszSh[4] = "BSIT 2-5";
+ c_rgszSh[5] = "BSEE 1-1";
+ c_rgszSh[6] = "BSEE 1-2";
+ c_rgszSh[7] = "BSEM 1-1";
+ c_rgszSh[8] = "BEE 2-1";
+ c_rgszSh[9] = "BEE 2-2";
+ c_rgszSh[10] = "BEE 2-3";
+ c_rgszSh[11] = "BSEE 2-1";
+ c_rgszSh[12] = "BSEE 2-2";
 
 
 
@@ -74,7 +74,7 @@ function fnGetIEVer()
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[10].href+"\" name=\"frSheet\" noresize>"+
+  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
   "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
   "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
@@ -379,8 +379,8 @@ function fnSetActiveSheet(iSh)
   <x:WindowWidth>17256</x:WindowWidth>
   <x:WindowTopX>32767</x:WindowTopX>
   <x:WindowTopY>32767</x:WindowTopY>
-  <x:ActiveSheet>10</x:ActiveSheet>
-  <x:FirstVisibleSheet>8</x:FirstVisibleSheet>
+  <x:FirstVisibleSheet>4</x:FirstVisibleSheet>
+  <x:SelectedSheets>13</x:SelectedSheets>
   <x:ProtectStructure>False</x:ProtectStructure>
   <x:ProtectWindows>False</x:ProtectWindows>
  </x:ExcelWorkbook>
@@ -388,7 +388,7 @@ function fnSetActiveSheet(iSh)
 </head>
 
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="MidYear%20Schedule_files/sheet011.htm" name="frSheet">
+ <frame src="MidYear%20Schedule_files/sheet001.htm" name="frSheet">
  <frame src="MidYear%20Schedule_files/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
  <noframes>
   <body>
